@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="950.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica6.FXMLDocumentController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="32.0" prefHeight="418.0" prefWidth="460.0" spacing="5.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <ToolBar prefHeight="51.0" prefWidth="710.0">
+               <items>
+                  <Button fx:id="barButton" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#changePane" prefHeight="60.0" prefWidth="60.0" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/chart-35773_1280.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="lineButton" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#changePane" prefHeight="60.0" prefWidth="60.0" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/Simpleicons_Business_line-chart-ascending.svg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="colorButton" maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#changeColor" prefHeight="60.0" prefWidth="60.0" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/contrast-39374_640.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+            <HBox fx:id="piePane" alignment="CENTER" prefHeight="433.0" prefWidth="710.0">
+               <children>
+                  <PieChart fx:id="pieChart" prefHeight="434.0" prefWidth="713.0" />
+               </children></HBox>
+            <StackPane fx:id="stackPane" prefHeight="303.0" prefWidth="710.0">
+               <children>
+                  <LineChart fx:id="lineChart" alternativeColumnFillVisible="true" createSymbols="false">
+                    <xAxis>
+                      <CategoryAxis fx:id="lineCAxis" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="lineNAxis" side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <BarChart fx:id="barChart">
+                    <xAxis>
+                      <CategoryAxis fx:id="barCAxis" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="barNAxis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children></StackPane>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="590.0" spacing="10.0">
+               <children>
+                  <Button fx:id="suspensoButton" maxWidth="90.0" minWidth="120.0" mnemonicParsing="false" onAction="#sumValue" prefHeight="40.0" prefWidth="120.0" text="Suspenso" />
+                  <Button fx:id="aprobadoButton" maxWidth="90.0" minWidth="120.0" mnemonicParsing="false" onAction="#sumValue" prefHeight="40.0" prefWidth="120.0" text="Aprobado" />
+                  <Button fx:id="bienButton" maxWidth="90.0" minWidth="120.0" mnemonicParsing="false" onAction="#sumValue" prefHeight="40.0" prefWidth="120.0" text="Bien" />
+                  <Button fx:id="notableButton" maxWidth="90.0" minWidth="120.0" mnemonicParsing="false" onAction="#sumValue" prefHeight="40.0" prefWidth="120.0" text="Notable" />
+                  <Button fx:id="sobreButton" maxWidth="102.0" minWidth="120.0" mnemonicParsing="false" onAction="#sumValue" prefHeight="40.0" prefWidth="120.0" text="Sobresaliente" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

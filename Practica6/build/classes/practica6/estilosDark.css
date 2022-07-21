@@ -1,0 +1,52 @@
+.root{
+    -fx-font-family: "Arial";
+    -fx-background-color: black;
+    -fx-text-fill: darkorange;
+}
+
+.button{
+    -fx-text-fill: darkorange;
+    -fx-background-color: dimgrey;
+    -fx-font-weight: bold;
+}
+
+.tool-bar{
+    -fx-background-color: dimgrey;
+}
+#lineButton, #barButton, #colorButton{
+    -fx-background-color: grey;
+}
+
+.chart-title{
+    -fx-text-fill: darkorange;
+    -fx-font-weight: bold;
+    -fx-font-size: 24pt;
+}
+
+.chart-pie-label { 
+    -fx-fill: darkorange;
+}
+.chart-pie-label-line{ 
+    -fx-stroke: darkorange;
+}
+
+.axis{
+    -fx-tick-label-fill: darkorange;
+}
+.axis-label{
+    -fx-text-fill:darkorange;
+}
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines{
+     -fx-stroke: darkorange;
+}
+.default-color0.chart-bar{
+    -fx-bar-fill: darkorange;
+}
+.chart-plot-background{
+    -fx-background-color: dimgrey;
+ }
+ .chart-alternative-row-fill{
+     -fx-fill: black; 
+     -fx-stroke: transparent; 
+     -fx-stroke-width: 0;
+ }

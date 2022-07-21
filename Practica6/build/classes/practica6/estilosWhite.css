@@ -1,0 +1,22 @@
+.root{
+    -fx-font-family: "Arial";
+    -fx-background-color: white;
+}
+
+.button{
+    -fx-text-fill: cornflowerblue;
+    -fx-font-weight: bold;
+}
+
+.chart-pie-label { 
+    -fx-fill: cornflowerblue;
+}
+.default-color0.chart-bar{
+    -fx-bar-fill: cornflowerblue;
+}
+.chart-title{
+    -fx-text-fill: cornflowerblue;
+    -fx-font-weight: bold;
+    -fx-font-size: 24pt;
+}
+

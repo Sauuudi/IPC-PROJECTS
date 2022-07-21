@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="257.0" prefWidth="419.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="practica7.FXMLDocumentController">
+    <children>
+      <HBox alignment="CENTER" layoutX="63.0" layoutY="170.0" prefHeight="34.0" prefWidth="293.0" spacing="80.0">
+         <children>
+            <Button fx:id="mostrarButton" mnemonicParsing="false" onAction="#mostar" prefHeight="31.0" prefWidth="88.0" text="Mostrar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="pararButton" mnemonicParsing="false" onAction="#parar" prefHeight="31.0" prefWidth="88.0" text="Parar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="text" alignment="CENTER" layoutX="76.0" layoutY="69.0" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: none;" text="adasdadsa">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
