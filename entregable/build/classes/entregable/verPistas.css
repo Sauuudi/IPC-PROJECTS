@@ -1,0 +1,53 @@
+.root{
+   -fx-font-family: "Arial";
+   -fx-background-color: #559EE3;
+}
+
+#titulo{
+    -fx-fill: white;
+    -fx-font-size: 36px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 15, 0.4, 0, 0);
+ }
+
+
+.list-cell {
+    -fx-text-fill: black ;
+    -fx-background-color: #90EE90; /*LightGreen*/
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:booked {
+    
+    -fx-background-color: crimson ;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:pasada {
+    
+    -fx-background-color: #bfbfbf ;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:hover {
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-background-color: rgba(100, 100, 100, 0.1);
+    
+}
+
+.list-cell:selected {
+    
+    -fx-background-color: mediumaquamarine;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+}
+
+.list-view{
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}

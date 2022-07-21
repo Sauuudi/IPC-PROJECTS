@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="379.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipc_ilesdeb.FXML_ilesdebController">
+   <top>
+      <MenuBar prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Moneda">
+               <items>
+                  <RadioMenuItem fx:id="libraEss" mnemonicParsing="false" text="Libra">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="menuEss" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem fx:id="dolarEss" mnemonicParsing="false" text="Dolar Americano" toggleGroup="$menuEss" />
+                  <RadioMenuItem fx:id="rupiaEss" mnemonicParsing="false" text="Rupia India" toggleGroup="$menuEss" />
+                  <RadioMenuItem fx:id="yuanEss" mnemonicParsing="false" text="Yuan Chino" toggleGroup="$menuEss" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Salir">
+               <items>
+                  <MenuItem fx:id="salirEss" mnemonicParsing="false" text="Salir" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox maxWidth="30.0" minWidth="30.0" prefHeight="166.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox maxWidth="30.0" minWidth="30.0" prefHeight="166.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox maxWidth="498.0" minWidth="30.0" prefHeight="395.0" prefWidth="498.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad (formato español 1235,49)" wrappingWidth="417.26678466796875" />
+            <TextField fx:id="inEss" prefHeight="32.0" prefWidth="466.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Resultado" wrappingWidth="427.73671531677246" />
+            <TextField fx:id="outEss" prefHeight="32.0" prefWidth="466.0" />
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </padding></VBox>
+   </center>
+   <bottom>
+      <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

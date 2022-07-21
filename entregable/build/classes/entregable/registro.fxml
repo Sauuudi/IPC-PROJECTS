@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="fondo" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entregable.RegistroController">
+   <children>
+      <VBox layoutX="67.0" layoutY="136.0" prefHeight="200.0" prefWidth="446.0" spacing="75.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="145.0">
+               <children>
+                  <Text fx:id="nombreError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Incorrecto" wrappingWidth="190.0" />
+                  <Text fx:id="apellidoError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido Incorrecto" wrappingWidth="200.0000061035155" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="145.0">
+               <children>
+                  <Text fx:id="usuarioError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Ususario existente" wrappingWidth="190.0" />
+                  <Text fx:id="contraseñaError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña incorrecta" wrappingWidth="225.3367042541504" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="145.0">
+               <children>
+                  <Text fx:id="telefonoError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono incorrecto" wrappingWidth="190.0" />
+                  <Text fx:id="creditoError" fill="#ed3939" strokeType="OUTSIDE" strokeWidth="0.0" text="Tarjeta incorrecta" wrappingWidth="190.4000000000001" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="62.0" layoutY="82.0" prefHeight="342.0" prefWidth="675.0" spacing="50.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="675.0" spacing="120.0">
+               <children>
+                  <TextField fx:id="nombreField" maxHeight="42.4" maxWidth="-Infinity" minHeight="42.4" prefHeight="42.4" prefWidth="200.0" promptText="Nombre">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="apellidosField" maxHeight="42.4" minHeight="42.4" prefHeight="42.4" prefWidth="275.0" promptText="Apellidos">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="675.0" spacing="120.0">
+               <children>
+                  <TextField fx:id="usuarioField" maxHeight="42.4" maxWidth="-Infinity" minHeight="42.4" prefHeight="42.4" prefWidth="200.0" promptText="Usuario">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="contraseñaField" maxHeight="42.4" minHeight="42.4" prefHeight="42.4" prefWidth="244.0" promptText="Contraseña **">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="675.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="telefonoField" maxHeight="42.4" maxWidth="-Infinity" minHeight="42.4" prefHeight="42.4" prefWidth="200.0" promptText="Telefono">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="creditoField" maxHeight="42.4" minHeight="42.4" prefHeight="42.4" prefWidth="200.0" promptText="Tarjeta de Credito (opcional)">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="svcField" prefHeight="42.0" prefWidth="106.0" promptText="SVC">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="466.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="imageField" maxHeight="42.4" maxWidth="-Infinity" minHeight="42.4" prefHeight="42.4" prefWidth="230.0" promptText="Imagen (opcional)">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="fcButton" mnemonicParsing="false" onAction="#selectImage" prefHeight="46.0" prefWidth="38.0" text="...">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Text fx:id="titulo" layoutX="130.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro" textAlignment="CENTER" wrappingWidth="136.7999633789061">
+         <font>
+            <Font name="Calibri" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="661.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="** Combinacion de letras y numeros con un minimo de 6 caracteres" textAlignment="CENTER" wrappingWidth="124.79990234375009" />
+      <Button fx:id="continuarButton" layoutX="439.0" layoutY="353.0" mnemonicParsing="false" onAction="#register" prefHeight="55.0" prefWidth="207.0" text="REGISTRARSE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="82.0" fitWidth="53.0" layoutX="74.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 40%;">
+         <image>
+            <Image url="@img/raqueta3.png" />
+         </image>
+         <effect>
+            <Shadow height="2.0" radius="0.5" width="2.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

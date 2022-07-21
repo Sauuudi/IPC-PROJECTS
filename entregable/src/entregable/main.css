@@ -1,0 +1,114 @@
+.root{
+    -fx-font-family: "Arial";
+}
+
+#userText{
+    -fx-text-fill: white;
+ }
+
+#fechaText{ /*TITULO*/
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 15, 0.5, 0, 0);
+    -fx-font-size: 40px;
+}
+#leftPane{-fx-background-color: #559EE3 ;}
+#misReservasPane{-fx-background-color: 	#347BBE;}
+#reservarPane{-fx-background-color: #347BBE;}
+
+/*------------------------------------------------------*/
+
+
+.list-cell {
+    -fx-text-fill: black ;
+    -fx-background-color: #90EE90; /*LightGreen*/
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:booked {
+    
+    -fx-background-color: crimson ;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:pasada {
+    
+    -fx-background-color: #bfbfbf ;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-font-size: 16px;
+}
+.list-cell:hover {
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+    -fx-background-color: rgba(100, 100, 100, 0.1);
+    
+}
+
+.list-cell:selected {
+    
+    -fx-background-color: mediumaquamarine;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+    -fx-cell-size: 41;
+}
+
+.list-view{
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+/*------------------------------------------------------*/
+
+.button{
+    -fx-background-color: #5582D5 ;
+    -fx-border-color: none;
+    -fx-border-radius: 3;
+    -fx-border-width: 2px;
+    -fx-background-radius: 0;
+    -fx-text-fill:  white;
+    -fx-font-size: 20px;
+
+ }
+ .button:hover{
+     -fx-background-color: #80A2E0 ;
+  }
+#misReservasButton:hover , #reservarPistaButton:hover{
+    
+    -fx-background-color: #347BBE ;
+}
+ /*------------------------------------------------------*/
+ .date-picker > .text-field{
+    -fx-background-color: #9ec9cf;
+    -fx-background-radius:1;
+    -fx-text-fill:  black;
+    -fx-font-size: 24px;
+    -fx-border-color: none;
+ }
+ 
+  .date-picker > .button {
+    -fx-border-color: none;
+    -fx-background-color: #9ec9cf;
+    -fx-background-radius: 1;
+ }
+ 
+ 
+ 
+ /*------------------------------------------------------*/
+ #screen{
+    -fx-text-fill:  white;
+    -fx-background-color: white, #9ec9cf , #9ec9cf;
+    -fx-font-size:18px;
+    -fx-alignment: center;
+    
+ }
+ 
+ 
+ 
+ 
+ 
+    
+
+

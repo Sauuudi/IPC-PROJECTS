@@ -1,0 +1,31 @@
+.root{
+   -fx-font-family: "Arial";
+   -fx-background-color: #559EE3;
+}
+#titulo{
+    -fx-fill: white;
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 15, 0.4, 0, 0);
+ }
+ 
+ .button{
+    -fx-background-color: #347BBE  ;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10;
+    -fx-text-fill:  white;
+    -fx-font-size: 18px;
+
+ }
+ .button:hover{
+     -fx-background-color:#5582D5 ;
+  }
+ .button:focused{
+     -fx-background-color:  #5582D5  ;
+  }
+  
+.Text{
+      -fx-fill: white;
+      
+      
+  }

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="900.0" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entregable.MainController">
+   <children>
+      <AnchorPane fx:id="leftPane" prefHeight="600.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="241.0" prefWidth="232.0" spacing="80.0" AnchorPane.bottomAnchor="477.6" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="userImage" fitHeight="92.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/default_img.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="userText" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="136.79998590946184">
+                           <font>
+                              <Font name="Calibri" size="33.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="138.0" prefWidth="230.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="reservarPistaButton" maxHeight="60.0" maxWidth="232.0" minHeight="60.0" minWidth="232.0" mnemonicParsing="false" onAction="#changePane" prefHeight="60.0" prefWidth="232.0" text="RESERVAR PISTA">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="misReservasButton" maxHeight="60.0" maxWidth="232.0" minHeight="60.0" minWidth="232.0" mnemonicParsing="false" onAction="#changePane" prefHeight="60.0" prefWidth="232.0" text="MIS RESERVAS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="233.0" layoutY="144.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="667.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="misReservasPane" layoutX="36.0" prefHeight="600.0" prefWidth="670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" layoutX="38.0" layoutY="154.0" prefHeight="506.0" prefWidth="880.0" spacing="15.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="154.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="506.0" prefWidth="413.0" spacing="20.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RESERVAS PENDIENTES" textAlignment="CENTER" wrappingWidth="250.64641761779785">
+                                 <font>
+                                    <Font name="Calibri" size="26.0" />
+                                 </font>
+                              </Text>
+                              <ListView fx:id="reservasPendientesList" maxHeight="-Infinity" maxWidth="430.0" prefHeight="286.0" prefWidth="430.0" />
+                              <Button fx:id="cancelarReservaButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#cancelarReserva" prefHeight="38.0" prefWidth="273.0" text="CANCELAR RESERVA">
+                                 <font>
+                                    <Font name="Calibri" size="17.0" />
+                                 </font>
+                              </Button>
+                              <Text fx:id="screen2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="-----" textAlignment="CENTER" wrappingWidth="412.0000366210936">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="389.0" minHeight="352.0" minWidth="250.0" prefHeight="560.0" prefWidth="350.0" spacing="20.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TUS ULTIMAS RESERVAS" textAlignment="CENTER" wrappingWidth="289.8465061187744">
+                                 <font>
+                                    <Font name="Calibri" size="26.0" />
+                                 </font>
+                              </Text>
+                              <ListView fx:id="ultimasReservasList" maxHeight="500.0" maxWidth="350.0" prefHeight="438.0" prefWidth="350.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="reservarPane" prefHeight="600.0" prefWidth="670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="64.0" layoutY="11.0" prefHeight="751.0" prefWidth="850.0" spacing="20.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="11.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="13.0" prefWidth="850.0">
+                           <children>
+                              <ImageView fitHeight="69.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 40%;">
+                                 <image>
+                                    <Image url="@img/raqueta3.png" />
+                                 </image>
+                                 <effect>
+                                    <Shadow height="2.0" radius="0.5" width="2.0" />
+                                 </effect>
+                              </ImageView>
+                              <Text fx:id="fechaText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Club PaddleExperience" textAlignment="CENTER" wrappingWidth="403.33362424373615">
+                                 <font>
+                                    <Font name="Calibri" size="42.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="-6.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="-15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="718.0" spacing="20.0">
+                           <children>
+                              <DatePicker fx:id="fecha" prefHeight="51.0" prefWidth="264.0" />
+                              <Button fx:id="buscarButton" mnemonicParsing="false" onAction="#actualizar" prefHeight="53.0" prefWidth="171.0" text="BUSCAR">
+                                 <font>
+                                    <Font name="Calibri" size="25.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="436.0" prefWidth="911.0" spacing="10.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="407.0" minHeight="407.0" prefHeight="407.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pista 1" textAlignment="CENTER" wrappingWidth="159.44640350341797">
+                                       <font>
+                                          <Font name="Calibri" size="28.0" />
+                                       </font>
+                                    </Text>
+                                    <ListView fx:id="p1List" minWidth="220.0" prefHeight="400.0" prefWidth="300.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="407.0" minHeight="407.0" prefHeight="407.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pista 2" textAlignment="CENTER" wrappingWidth="177.55426025390625">
+                                       <font>
+                                          <Font name="Calibri" size="28.0" />
+                                       </font>
+                                    </Text>
+                                    <ListView fx:id="p2List" minWidth="220.0" prefHeight="400.0" prefWidth="300.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="407.0" minHeight="407.0" prefHeight="407.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pista 3" textAlignment="CENTER" wrappingWidth="126.35430908203125">
+                                       <font>
+                                          <Font name="Calibri" size="28.0" />
+                                       </font>
+                                    </Text>
+                                    <ListView fx:id="p3List" minWidth="220.0" prefHeight="400.0" prefWidth="300.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="407.0" minHeight="407.0" prefHeight="407.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pista 4" textAlignment="CENTER" wrappingWidth="135.154296875">
+                                       <font>
+                                          <Font name="Calibri" size="28.0" />
+                                       </font>
+                                    </Text>
+                                    <ListView fx:id="p4List" minWidth="220.0" prefHeight="400.0" prefWidth="300.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <TextField fx:id="screen" editable="false" maxHeight="50.0" maxWidth="700.0" minHeight="20.0" minWidth="20.0" prefHeight="50.0" prefWidth="446.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
+                              <Button fx:id="reservarButton" mnemonicParsing="false" onAction="#reservar" prefHeight="66.0" prefWidth="199.0" text="RESERVAR">
+                                 <font>
+                                    <Font name="Calibri" size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

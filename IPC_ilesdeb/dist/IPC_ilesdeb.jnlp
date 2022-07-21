@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IPC_ilesdeb.jnlp">
+  <information>
+    <title>IPC_ilesdeb</title>
+    <vendor>Mystubis</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="IPC_ilesdeb.jar" size="4826" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="ipc_ilesdeb.IPC_ilesdeb"  name="IPC_ilesdeb" />
+  <update check="always"/>
+</jnlp>
